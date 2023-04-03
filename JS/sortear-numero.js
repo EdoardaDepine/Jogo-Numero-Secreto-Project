@@ -8,6 +8,7 @@ const elementoMaiorValor = document.querySelector("#maior-valor");
 elementoMaiorValor.innerHTML = maiorValor;
 
 const numeroSecreto = gerarNumeroAleatorio();
+console.log(numeroSecreto);
 
 function gerarNumeroAleatorio() {
   return parseInt(Math.random() * maiorValor + 1);
