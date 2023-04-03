@@ -54,5 +54,12 @@ h3 {
   font-family: var(--font-family);
   font-size: 30px;
   color: black;
+}
 
+.game-over {
+  color: red;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-decoration: solid;
 }

@@ -2,7 +2,12 @@ function verificaChutePossuiValorValido(chute) {
   const numero = +chute;
 
   if (Number.isNaN(numero)) {
-    elementoChute.innerHTML += "<div>Valor inválido!</div>";
+    document.body.innerHTML += `
+    <h3 class="game-over">GAME OVER!</h3>
+    <h2>Pressione o botão para jogar novamente:</h2>
+    <button id="jogar-novamente" class="btn-jogar" >Jogar novamente</button>
+    `;
+    document.body.style.backgroundColor = "black";
     return;
   }
 
